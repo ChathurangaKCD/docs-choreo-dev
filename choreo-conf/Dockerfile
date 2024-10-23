@@ -9,8 +9,6 @@ COPY choreo-conf/nginx.conf /etc/nginx/conf.d/
 # Copy built app to nginx public directory
 COPY . /usr/share/nginx/html
 
-RUN rm -rf /usr/share/nginx/html/choreo-conf
-
 USER 10014
 
 # Expose port 8080
